@@ -2,6 +2,7 @@ document.getElementById("bold").addEventListener("click", function () {
   const textArea = document.getElementById("textField");
   textArea.style.fontWeight = "bold";
 });
+
 document.getElementById("italic").addEventListener("click", function () {
   const textArea = document.getElementById("textField");
   textArea.style.fontStyle = "italic";
@@ -33,4 +34,14 @@ document.getElementById("letter").addEventListener("click", function () {
   textArea.style.textTransform = "uppercase";
 });
 
+const font = document.getElementById("fontSizeInput");
+font.addEventListener("input", function () {
+  const textArea = document.getElementById("textField");
+  textArea.style.fontSize = font.value + "px";
+});
 
+const colorPlate = document.getElementById("color");
+color.addEventListener("input", function () {
+  const textArea = document.getElementById("textField");
+  textArea.style.color = color.value;
+});

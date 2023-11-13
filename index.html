@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dracula">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,36 +11,36 @@
 </head>
 <body >
   
-        <div class="bg-blue-300 pb-16 mx-96 ">
+        <div class="bg-indigo-700 pb-16 mx-4 lg:mx-96 shadow-lg shadow-cyan-500/50 ">
             
-        <h1 class="text-center font-extrabold text-3xl font-mono mt-16 pt-8">My Text Editor</h1>
-        <div class="border-2 border-black mx-auto mt-8 w-5/6 h-96 bg-blue-200">
+        <h1 class="text-center  font-extrabold text-3xl font-mono mt-16 pt-8">My Text Editor</h1>
+        <div class="border-2 border-black mx-auto mt-8 w-5/6 h-96 bg-pink-500">
             
-            <div class="grid grid-cols-3  gap-4 py-2 ">
+            <div class="grid lg:grid-cols-3    lg:gap-4 py-2  ">
 
-            <div class="px-4 ">
+            <div class="px-4 pb-1 lg:pb-0 text-black  ">
                 <i id="bold" class="fa-solid fa-bold"></i>
                 <i id="italic" class="fa-solid fa-italic px-4"></i>
                 <i id="underline" class="fa-solid fa-underline"></i>
             </div>
 
-            <div class="text-center ">
+            <div class="lg:text-center px-16 lg:px-8  py-1 border border-black lg:border-0 text-black">
                 <i id="left" class="fa-solid fa-align-left  "></i>
                 <i id="center" class="fa-solid fa-align-center px-4"></i>
                 <i id="right" class="fa-solid fa-align-right px-2"></i>
                 <i id="justify" class="fa-solid fa-align-justify"></i>
             </div>
 
-            <div class="text-right px-8">
-                <a id="size" class="font-bold ">17</a>
+            <div class="lg:text-right px-4 lg:px-8 pt-2 lg:pt-0 text-black ">
+                <input class="w-16 text-black font-bold" type="number" id="fontSizeInput" min="1" max="50" placeholder="17">
                 <a id="letter" class="font-bold px-4">aA</a>
                 <input   type="color" name="" id="color">
                 
             </div>
             </div>
-            <div class="border border-black w-11/12 mx-auto mt-4"></div>
+            <div class="border border-black w-11/12 mx-auto mt-2 lg:mt-0 "></div>
 
-            <textarea class="flex justify-center items-center mx-auto mt-7 w-5/6" name="" id="textField" cols="90" rows="10"></textarea>
+            <textarea class="flex justify-center items-center text-black mx-auto mt-7 w-5/6 h-48 lg:h-64" name="" id="textField" cols="90" rows="10" placeholder="Type here"></textarea>
 
             
 
